@@ -1,4 +1,3 @@
-
 /**
  * Express configuration
  */
@@ -12,7 +11,7 @@ var compression = require("compression");
 var path = require("path");
 var config = require("./index");
 
-module.exports = function(app) {
+module.exports = function (app) {
   app.use(compression());
   app.use(express.static(path.join(config.root, "dist")));
   app.set("appPath", path.join(config.root, "dist"));
