@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  api: 'https://api.classpip.com'
+  api: 'http://api.classpip.com'
 };
